@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorText</item>
+
+    </style>
+
+
+    <style name="CustomActionBarDeviceDefault" parent="@android:style/Theme.Holo.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorText</item>
+
+    </style>
+
+
+    <style name="CustomActionBarAppCompat" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorText</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="ThemeToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorText</item>
+
+        <item name="colorButtonNormal" tools:ignore="NewApi">@color/colorText</item>
+
+    </style>
+
+    <style name="CollapsedTitle" parent="Widget.Design.CollapsingToolbar">
+
+        <item name="android:textColor">@color/colorText</item>
+
+    </style>
+
+    <style name="ExpandTitle" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:background">@drawable/black_transperent</item>
+
+    </style>
+
+
+    <style name="fab" parent="@style/Widget.Design.FloatingActionButton">
+        <item name="android:background">@drawable/black_transperent</item>
+    </style>
+
+
+    <style name="ThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
+        <!-- android:textColorPrimary is the  color of the title text
+             in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">@color/colorText</item>
+
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+        <!-- android:actionMenuTextColor is the color of the text of
+              action (menu) items in the Toolbar, at least in the
+              Theme.AppCompat theme.
+              For some reason, they already get the textColorPrimary
+              when running on API 21, but not on older versions of
+              Android, so this is only necessary to support older
+              Android versions.-->
+        <item name="actionMenuTextColor">@color/colorText</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/colorText</item>
+
+        <!-- This would set the toolbar's background color,
+              but setting this also changes the popup menu's background,
+              even if we define popupTheme for our <Toolbar> -->
+        <!-- <item name="android:background">@color/color_primary</item> -->
+    </style>
+
+</resources>

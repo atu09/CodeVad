@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/jobSeeker_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="@color/colorTheme"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorText"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorText"
+            app:tabTextColor="@color/colorText" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/jobSeeker_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                fab:fab_colorNormal="@color/colorThemeTransparent"
+                fab:fab_colorPressed="@color/colorBlackTransparent"
+                fab:fab_label="Edit"
+                fab:fab_size="normal" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:collapsedTitleTextAppearance="@style/CollapsedTitle"
+            app:contentScrim="@color/colorTheme"
+            app:expandedTitleTextAppearance="@style/ExpandTitle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/imagePager_job_seeker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/custom_job_seeker_profile_floating_menu" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorTransparent" />
+
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/jobSeeker_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeToolbarDarkOverflow"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeToolbar" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

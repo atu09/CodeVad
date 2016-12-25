@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteLight"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/bioFrag_basicInfo"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/header_textSize" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="left|center"
+                    android:background="@color/colorGrey" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_fullName"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="Name Of User "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/detail_textSize" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_currentCity"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Name Of City"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_homeTown"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Name Of Town "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_dob"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="XX-XX-XXXX"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_gender"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Male / Female"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/bioFrag_edu"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/header_textSize" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="left|center"
+                    android:background="@color/colorGrey" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_schoolName"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Name Of School"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_collegeName"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Name Of College"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_universityName"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Name Of University"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/bioFrag_contactInfo"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/header_textSize" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="left|center"
+                    android:background="@color/colorGrey" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_emailAddress"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="xxxxxx@xmail.com"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_mobNo"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="+91 XXXXXXXXXX"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/bioFrag_aboutYou"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/header_textSize" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="left|center"
+                    android:background="@color/colorGrey" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_currentWorkArea"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Name Of Company"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="@string/bioFrag_aboutSelf"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+                <com.aces.codevad.CustomFontsExtensions.MyTextViewBook
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Write Something About User"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/detail_textSize" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

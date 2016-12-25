@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        fab:menu_colorNormal="@color/colorThemeTransparent"
+        fab:menu_colorPressed="@color/colorBlackTransparent"
+        fab:menu_fab_size="normal">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_person_add_white_24dp"
+            fab:fab_colorNormal="@color/colorThemeTransparent"
+            fab:fab_colorPressed="@color/colorBlackTransparent"
+            fab:fab_label="Follow"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_white_24dp"
+            fab:fab_colorNormal="@color/colorThemeTransparent"
+            fab:fab_colorPressed="@color/colorBlackTransparent"
+            fab:fab_label="Chat"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_white_24dp"
+            fab:fab_colorNormal="@color/colorThemeTransparent"
+            fab:fab_colorPressed="@color/colorBlackTransparent"
+            fab:fab_label="Call"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</FrameLayout>

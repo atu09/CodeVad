@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteLight"
+    tools:context=".Fragments.BioFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteLight"
+        android:padding="10dp"
+        android:scrollIndicators="none"
+        android:scrollbars="none">
+
+        <include layout="@layout/custom_job_seeker_profile_bio" />
+
+    </ScrollView>
+
+</FrameLayout>

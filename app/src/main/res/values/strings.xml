@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CodeVad</string>
+    <string name="appUserName">User Name</string>
+    <string name="bio_fragment">Bio</string>
+    <string name="expertise_fragment">Expertise</string>
+    <string name="experience_fragment">Experience</string>
+
+    <!-- Bio Fragment -->
+    <string name="bioFrag_basicInfo">Basic Info</string>
+    <string name="bioFrag_fullName">Full Name: </string>
+    <string name="bioFrag_currentCity">Current City: </string>
+    <string name="bioFrag_homeTown">Home Town: </string>
+    <string name="bioFrag_dob">Date Of Birth: </string>
+    <string name="bioFrag_gender">Gender: </string>
+    <string name="bioFrag_edu">Education</string>
+    <string name="bioFrag_schoolName">School Name: </string>
+    <string name="bioFrag_collegeName">College Name: </string>
+    <string name="bioFrag_universityName">University Name: </string>
+    <string name="bioFrag_contactInfo">Contact Info</string>
+    <string name="bioFrag_emailAddress">E-Mail Address: </string>
+    <string name="bioFrag_mobNo">Mobile Number: </string>
+    <string name="bioFrag_aboutYou">About You</string>
+    <string name="bioFrag_currentWorkArea">Currently Working In: </string>
+    <string name="bioFrag_aboutSelf">About Self: </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
